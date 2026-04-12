@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы 360shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&family=Fira+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="phone-shell" aria-label="Отзывы 360shop">
+      <header class="chat-header">
+        <div class="chat-header__avatar" aria-hidden="true">360</div>
+        <div class="chat-header__meta">
+          <h1>Отзывы 360shop</h1>
+          <p id="statusText">Подключаемся к таблице...</p>
+        </div>
+        <div class="chat-header__counter" id="reviewsCount">0</div>
+      </header>
+
+      <section class="chat-feed" id="chatFeed" aria-live="polite">
+        <article class="empty-state" id="emptyState">
+          <h2>Пока нет отзывов</h2>
+          <p>
+            Проверьте, что таблица доступна для просмотра по ссылке и правильно указан `sheetId` в
+            файле `config.js`.
+          </p>
+        </article>
+      </section>
+
+      <footer class="chat-footer">
+        <span>Листайте, как ленту в Telegram</span>
+      </footer>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
